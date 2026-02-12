@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAppDispatch } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import Button from "../../shared/ui/Button/Button";
 import styles from "./UploadPanel.module.css"
 import { resetState, setError, setTree } from "../openapi-splitter/openapiSlice";
@@ -7,6 +7,7 @@ import { splitOpenApi } from "../openapi-splitter/splitOpenApi";
 
 function UploadPanel() {
   const dispatch = useAppDispatch();
+  const error = useAppSelector(state => state.openapi.error);
 
   const [text, setText] = useState('');
 
@@ -73,6 +74,12 @@ function UploadPanel() {
             }}
           />
         </label>
+
+        {error && (
+          <div className={styles.uploadError}>
+            {error}
+          </div>
+        )}
 
         <Button onClick={handleParse}>
           Parse

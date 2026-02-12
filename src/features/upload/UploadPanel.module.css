@@ -34,3 +34,11 @@
 .fileButton:hover {
   background: #d1d5db;
 }
+
+.uploadError {
+  padding: 7px;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
