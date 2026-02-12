@@ -1,0 +1,36 @@
+.upload {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.upload textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.uploadActions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fileButton {
+  background: #e5e7eb;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.fileButton:hover {
+  background: #d1d5db;
+}

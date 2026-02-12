@@ -1,0 +1,9 @@
+.viewer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow: auto;
+  background-color: black;
+  color: white;
+}
