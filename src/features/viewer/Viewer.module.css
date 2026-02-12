@@ -7,3 +7,14 @@
   background-color: black;
   color: white;
 }
+
+.viewerEmpty,
+.viewerError {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  color: #94a3b8;
+  font-size: 1.2em;
+}
