@@ -1,5 +1,7 @@
 import { useAppSelector } from "../../app/hooks";
 import { findFileByPath } from "../../entities/file-system/findFileByPath";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import styles from "./Viewer.module.css"
 
 function Viewer() {
@@ -19,9 +21,15 @@ function Viewer() {
   }
 
   return (
-    <div className="viewer">
+    <div className={styles.viewer}>
       <h2>{file.path}</h2>
-      <pre>{file.content}</pre>
+      <SyntaxHighlighter
+        language="yaml"
+        style={oneDark}
+        showLineNumbers
+      >
+        {file.content}
+      </SyntaxHighlighter>
     </div>
   );
 }
