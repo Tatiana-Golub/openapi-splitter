@@ -1,9 +1,9 @@
-import { configureStore } from "@reduxjs/toolkit";
-import openapiReducer from "../features/openapi-splitter/openapiSlice"
+import { configureStore } from '@reduxjs/toolkit';
+import openApiReducer from "../features/openapi-splitter/openapiSlice"
 
 export const store = configureStore({
   reducer: {
-    openapi: openapiReducer
+    openapi: openApiReducer
   }
 });
 
