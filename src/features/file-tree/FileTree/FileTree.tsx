@@ -1,4 +1,6 @@
 import { useAppSelector } from "../../../app/hooks";
+import Button from "../../../shared/ui/Button/Button";
+import { downloadZip } from "../../openapi-splitter/lib/downloadZip";
 import { FileTreeNode } from "../FileTreeNode/FileTreeNode";
 import styles from "./FileTree.module.css"
 
@@ -15,9 +17,12 @@ function FileTree() {
       </section>
     );
   }
-  
+
   return (
     <section className={styles.fileTree}>
+      <Button onClick={() => tree && downloadZip(tree)}>
+        Download ZIP
+      </Button>
       <h2>File tree</h2>
       <FileTreeNode node={tree} level={0} />
     </section>
