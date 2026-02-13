@@ -1,7 +1,7 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { DirectoryNode } from "../../entities/file-system/types";
 
-interface OpenApiState {
+export interface OpenApiState {
   tree: DirectoryNode | null;
   selectedFilePath: string | null;
   error: string | null;

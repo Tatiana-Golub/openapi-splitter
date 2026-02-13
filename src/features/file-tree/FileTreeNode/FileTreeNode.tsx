@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../app/hooks";
 import type { FileSystemNode } from "../../../entities/file-system/types";
-import { setSelectedFile } from "../../openapi-splitter/openApiSlice";
 import styles from "./FileTreeNode.module.css"
+import { setSelectedFile } from "../../openapi-splitter/openApiSlice";
 
 type Props = {
   node: FileSystemNode;

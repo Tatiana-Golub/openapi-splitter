@@ -19,7 +19,8 @@ export default defineConfig({
         'src/index.{js,jsx,ts,tsx}',
         'src/setupTests.{js,ts}',
         'src/**/*.d.ts',
-        '**/types/**',
+        '**/types.{js,ts}',
+        '**/*.css',
       ],
       thresholds: {
         global: {

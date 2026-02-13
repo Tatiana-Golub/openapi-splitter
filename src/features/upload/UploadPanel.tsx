@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import Button from "../../shared/ui/Button/Button";
 import styles from "./UploadPanel.module.css"
-import { resetState, setError, setTree } from "../openapi-splitter/openapiSlice";
+import { resetState, setError, setTree } from "../openapi-splitter/openApiSlice";
 import { splitOpenApi } from "../openapi-splitter/splitOpenApi";
 
 function UploadPanel() {
@@ -28,7 +28,6 @@ function UploadPanel() {
       }
     }
   };
-
 
   const handleFileUpload = (file: File) => {
     const reader = new FileReader();
@@ -66,6 +65,7 @@ function UploadPanel() {
             type="file"
             accept=".yaml,.yml"
             hidden
+            data-testid="upload-input"
             onChange={(e) => {
               const file = e.target.files?.[0];
               if (file) {

@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import openApiReducer from "../features/openapi-splitter/openapiSlice"
+import openApiReducer from "../features/openapi-splitter/openApiSlice"
 
 export const store = configureStore({
   reducer: {
