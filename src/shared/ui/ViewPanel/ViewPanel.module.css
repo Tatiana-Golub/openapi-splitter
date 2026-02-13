@@ -5,3 +5,9 @@
   overflow: hidden;
   margin-bottom: 1em;
 }
+
+@media (max-width: 768px) {
+  .viewPanel {
+    flex-direction: column;
+  }
+}

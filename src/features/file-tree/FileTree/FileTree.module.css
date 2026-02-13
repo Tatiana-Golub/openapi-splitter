@@ -4,3 +4,15 @@
   padding: 16px;
   overflow-y: auto;
 }
+
+@media (max-width: 768px) {
+  .fileTree {
+    width: 100%;
+    height: 200px; 
+    min-height: 150px; 
+    max-height: 50vh; 
+    border-right: none;
+    margin-bottom: 10px;
+    overflow-y: auto; 
+  }
+}

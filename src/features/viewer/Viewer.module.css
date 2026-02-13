@@ -18,3 +18,10 @@
   color: #94a3b8;
   font-size: 1.2em;
 }
+
+@media (max-width: 768px) {
+  .viewer {
+    flex: 1; 
+    min-height: 150px;
+  }
+}
