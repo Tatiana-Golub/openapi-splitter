@@ -1,6 +1,6 @@
-import { describe, test, expect } from "vitest";
-import { splitOpenApi } from "./splitOpenApi";
-import type { DirectoryNode } from "../../entities/file-system/types";
+import { describe, test, expect } from 'vitest';
+import { splitOpenApi } from './splitOpenApi';
+import type { DirectoryNode } from '../../entities/file-system/types';
 
 describe("splitOpenApi", () => {
     test("splits a valid OpenAPI spec into a file tree", () => {

@@ -1,11 +1,11 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, test, vi } from "vitest";
-import { Provider } from "react-redux";
-import { configureStore, type Action, type Reducer } from "@reduxjs/toolkit";
-import FileTree from "../FileTree/FileTree";
-import * as downloadZipModule from "../../openapi-splitter/lib/downloadZip";
-import type { DirectoryNode } from "../../../entities/file-system/types";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, test, vi } from 'vitest';
+import { Provider } from 'react-redux';
+import { configureStore, type Action, type Reducer } from '@reduxjs/toolkit';
+import FileTree from '../FileTree/FileTree';
+import * as downloadZipModule from '../../openapi-splitter/lib/downloadZip';
+import type { DirectoryNode } from '../../../entities/file-system/types';
 import openApiReducer, { type OpenApiState } from '../../openapi-splitter/openApiSlice';
 
 type RootState = {

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import Button from "../../shared/ui/Button/Button";
-import styles from "./UploadPanel.module.css"
-import { resetState, setError, setTree } from "../openapi-splitter/openApiSlice";
-import { splitOpenApi } from "../openapi-splitter/splitOpenApi";
+import { useState } from 'react';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import Button from '../../shared/ui/Button/Button';
+import styles from './UploadPanel.module.css';
+import { resetState, setError, setTree } from '../openapi-splitter/openApiSlice';
+import { splitOpenApi } from '../openapi-splitter/splitOpenApi';
 
 function UploadPanel() {
   const dispatch = useAppDispatch();

@@ -1,5 +1,5 @@
-import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { DirectoryNode } from "../../entities/file-system/types";
+import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
+import type { DirectoryNode } from '../../entities/file-system/types';
 
 export interface OpenApiState {
   tree: DirectoryNode | null;

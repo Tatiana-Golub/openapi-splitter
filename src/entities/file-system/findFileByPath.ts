@@ -1,4 +1,4 @@
-import type { DirectoryNode, FileNode } from "./types";
+import type { DirectoryNode, FileNode } from './types';
 
 export function findFileByPath(
   node: DirectoryNode,

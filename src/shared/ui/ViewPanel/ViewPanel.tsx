@@ -1,6 +1,6 @@
-import FileTree from "../../../features/file-tree/FileTree/FileTree";
-import Viewer from "../../../features/viewer/Viewer";
-import styles from "./ViewPanel.module.css"
+import FileTree from '../../../features/file-tree/FileTree/FileTree';
+import Viewer from '../../../features/viewer/Viewer';
+import styles from './ViewPanel.module.css';
 
 function ViewPanel() {
   return (

@@ -1,8 +1,8 @@
-import { useAppSelector } from "../../../app/hooks";
-import Button from "../../../shared/ui/Button/Button";
-import { downloadZip } from "../../openapi-splitter/lib/downloadZip";
-import { FileTreeNode } from "../FileTreeNode/FileTreeNode";
-import styles from "./FileTree.module.css"
+import { useAppSelector } from '../../../app/hooks';
+import Button from '../../../shared/ui/Button/Button';
+import { downloadZip } from '../../openapi-splitter/lib/downloadZip';
+import FileTreeNode from '../FileTreeNode/FileTreeNode';
+import styles from './FileTree.module.css';
 
 function FileTree() {
   const tree = useAppSelector(state => state.openapi.tree);

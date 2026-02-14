@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../../app/hooks";
-import type { FileSystemNode } from "../../../entities/file-system/types";
-import styles from "./FileTreeNode.module.css"
-import { setSelectedFile } from "../../openapi-splitter/openApiSlice";
+import { useState } from 'react';
+import { useAppDispatch, useAppSelector } from '../../../app/hooks';
+import type { FileSystemNode } from '../../../entities/file-system/types';
+import styles from './FileTreeNode.module.css';
+import { setSelectedFile } from '../../openapi-splitter/openApiSlice';
 
 type Props = {
   node: FileSystemNode;
   level: number;
 };
 
-export function FileTreeNode({ node, level }: Props) {
+function FileTreeNode({ node, level }: Props) {
   const dispatch = useAppDispatch();
   const selectedPath = useAppSelector(
     state => state.openapi.selectedFilePath
@@ -54,3 +54,5 @@ export function FileTreeNode({ node, level }: Props) {
     </div>
   );
 }
+
+export default FileTreeNode

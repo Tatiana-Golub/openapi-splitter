@@ -1,6 +1,6 @@
-import yaml from "js-yaml";
-import type { DirectoryNode } from "../../entities/file-system/types";
-import { buildTree } from "../../entities/file-system/buildTree";
+import yaml from 'js-yaml';
+import type { DirectoryNode } from '../../entities/file-system/types';
+import { buildTree } from '../../entities/file-system/buildTree';
 
 interface OpenApiSpec {
   openapi: string;
