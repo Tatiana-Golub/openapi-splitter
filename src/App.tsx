@@ -1,11 +1,15 @@
-import Header from "./shared/ui/Header/Header"
-import MainLayout from "./shared/ui/MainLayout.tsx/MainLayout"
+import UploadPanel from './features/upload/UploadPanel';
+import Header from './shared/ui/Header/Header';
+import ViewPanel from './shared/ui/ViewPanel/ViewPanel';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <MainLayout />
+      <main className="layout">
+        <UploadPanel />
+        <ViewPanel />
+      </main>
     </div>
   )
 }

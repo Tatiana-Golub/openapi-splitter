@@ -1,8 +1,8 @@
-import { useAppSelector } from "../../app/hooks";
-import { findFileByPath } from "../../entities/file-system/findFileByPath";
+import { useAppSelector } from '../../app/hooks';
+import { findFileByPath } from '../../entities/file-system/findFileByPath';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import styles from "./Viewer.module.css"
+import styles from './Viewer.module.css';
 
 function Viewer() {
   const tree = useAppSelector(state => state.openapi.tree);
@@ -21,7 +21,7 @@ function Viewer() {
   }
 
   return (
-    <div className={styles.viewer}>
+    <section className={styles.viewer}>
       <h2>{file.path}</h2>
       <SyntaxHighlighter
         language="yaml"
@@ -30,7 +30,7 @@ function Viewer() {
       >
         {file.content}
       </SyntaxHighlighter>
-    </div>
+    </section>
   );
 }
 

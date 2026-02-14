@@ -25,3 +25,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
