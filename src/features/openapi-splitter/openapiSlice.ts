@@ -13,7 +13,7 @@ const initialState: OpenApiState = {
   error: null
 };
 
-const openapiSlice = createSlice({
+const openApiSlice = createSlice({
   name: 'openapi',
   initialState,
   reducers: {
@@ -51,6 +51,6 @@ export const {
   clearError,
   setSelectedFile,
   resetState
-} = openapiSlice.actions;
+} = openApiSlice.actions;
 
-export default openapiSlice.reducer;
+export default openApiSlice.reducer;
